@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.cs": "csharp",
+        "coeficientes_lib.h": "c",
+        "gaussianos_lib.h": "c",
+        "__bit_reference": "c",
+        "algorithm": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "unordered_map": "c"
+    }
+}

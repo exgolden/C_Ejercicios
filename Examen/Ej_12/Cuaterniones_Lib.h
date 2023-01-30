@@ -1,3 +1,4 @@
+#ifndef Cuaterniones_Lib
 #include <stdio.h>
 #include <stdlib.h>
 //------------------------------------------
@@ -44,30 +45,5 @@ H Prod_H(H h1, H h2){
     Prod.d=(h1.a*h2.d)+(h1.b*h2.c)-(h1.c*h2.b)+(h1.d*h2.a);
     return Prod;
 }
-
-
-//------------------------------------------
-int main(){
-    H h1, h2, Sum, Prod;
-    printf("Esta libreria opera Cuaterniones\n");
-    printf("Ingrese el primer Cuaternion (a b c d): ");
-    scanf("%d %d %d %d", &h1.a, &h1.b, &h1.c, &h1.d);
-    printf("Ingrese el segundo Cuaternion (a b c d): ");
-    scanf("%d %d %d %d", &h2.a, &h2.b, &h2.c, &h2.d);
-    printf("Los cuaterniones ingresados son:\n");
-    printf("h1= ");
-    Write_H(h1);
-    printf("\nh2= ");
-    Write_H(h2);
-    printf("\nSu suma es: ");
-    Sum=Sum_H(h1, h2);
-    Write_H(Sum);
-    printf("\nSu producto es: ");
-    Prod=Prod_H(h1, h2);
-    Write_H(Prod);
-    printf("\nFin del programa");
-    return 0;
-}
-
-//1+2i+3j+4k
-//5+6i+7j+8k
+#define Cuaterniones_Lib
+#endif

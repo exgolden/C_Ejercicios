@@ -1,7 +1,11 @@
+#ifndef Complex_Lib
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "Complex_Lib.h"
+//------------------------------------------
+typedef struct C{
+    double a ,b;
+}C;
 
 C Read_C(int a, int b){
     C c1;
@@ -43,3 +47,5 @@ C Div_C(C c1, C c2){
     Div.b=((c1.b*c2.a)-(c1.a*c2.b))/Sq;
     return Div;
 }
+#define Complex_Lib
+#endif

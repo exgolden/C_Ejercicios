@@ -3,7 +3,7 @@
 #include <math.h>
 #include "Complex_Lib.h"
 
-C Read_C(int a, int b){
+C Read_C(double a, double b){
     C c1;
     c1.a=a;
     c1.b=b;
